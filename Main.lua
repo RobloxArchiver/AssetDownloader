@@ -1,4 +1,4 @@
-local AssetDownloader = {}
+_G.AssetDownloader = {}
 
 function DownloadAsset(fileName, URL)
     if isfile(fileName) then
@@ -9,5 +9,3 @@ function DownloadAsset(fileName, URL)
         writefile(fileName, game:HttpGet(URL);
      end
 end
-
-return AssetDownloader
