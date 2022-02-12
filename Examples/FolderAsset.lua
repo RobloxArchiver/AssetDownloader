@@ -2,6 +2,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/AssetD
 AssetFolder("Assets")
 DownloadAsset("Assets/Checkmark.png", "https://raw.githubusercontent.com/RobloxArchiver/Xapper-Addon-Loader/main/Assets/testing.png")
 
-local check = getsynasset("Assets/Checkmark.png")
+local check = getasset("Assets/Checkmark.png")
 
 print(check)

@@ -10,7 +10,7 @@ This project quickly downloads files to the Workspace or folder in workspace to 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/AssetDownloader/main/Main.lua"))()
 DownloadAsset("Checkmark.png", "https://raw.githubusercontent.com/RobloxArchiver/Xapper-Addon-Loader/main/Assets/testing.png")
 
-local Checkmark = getsynasset("Checkmark.png")
+local Checkmark = getasset("Checkmark.png")
 
 print(Checkmark)
 ```
@@ -21,7 +21,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/AssetD
 AssetFolder("Assets")
 DownloadAsset("Assets/Checkmark.png", "https://raw.githubusercontent.com/RobloxArchiver/Xapper-Addon-Loader/main/Assets/testing.png")
 
-local check = getsynasset("Assets/Checkmark.png")
+local check = getasset("Assets/Checkmark.png")
 
 print(check)
 ```
