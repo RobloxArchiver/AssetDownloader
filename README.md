@@ -3,9 +3,12 @@
 
 This project quickly downloads files to the Workspace or folder in workspace to use with getsynasset.
 # Supported Exploits
-KRNL (https://krnl.ca/)
-Script-Ware (script-ware.com)
-Synapse X (x.synapse.to)
+KRNL ( https://krnl.ca/ )
+
+Script-Ware ( https://script-ware.com/ )
+
+Synapse X ( https://x.synapse.to/ )
+
 # Examples
 
 `DownloadAsset(fileName, URL)` will download the asset of said URL.
