@@ -11,7 +11,7 @@ This project quickly downloads files to the Workspace or folder in workspace to 
 
 # Examples
 
-`DownloadAsset(fileName, URL)` will download the asset of said URL.
+### `DownloadAsset(fileName, URL)`
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/AssetDownloader/main/Main.lua"))()
@@ -21,8 +21,9 @@ local Checkmark = getasset("Checkmark.png")
 
 print(Checkmark)
 ```
-2nd example using 
-`AssetFolder()`
+
+### `AssetFolder()`
+Another example but using AssetFolder
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/AssetDownloader/main/Main.lua"))()
 AssetFolder("Assets")
