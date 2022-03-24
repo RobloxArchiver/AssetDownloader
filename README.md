@@ -3,11 +3,11 @@
 
 This project quickly downloads files to the Workspace or folder in workspace to use with getsynasset.
 # Supported Exploits
-KRNL ( https://krnl.ca/ )
+- [KRNL](https://krnl.ca/ )
 
-Script-Ware ( https://script-ware.com/ )
+- [Script-Ware](https://script-ware.com/)
 
-Synapse X ( https://x.synapse.to/ )
+- [Synapse X](https://x.synapse.to/)
 
 # Examples
 
