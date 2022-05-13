@@ -9,7 +9,7 @@ function AssetDownloader:DownloadAsset(fileName, URL)
     if not isfile(fileName) then
         writefile(fileName, net(URL));
     else
-        throwerr("Asset " .. toS(fileName) .. " already exist.");
+        throwerr("Asset " .. fileName .. " already exist.");
         return;
     end;
 end;
@@ -18,7 +18,7 @@ function AssetDownloader:DeleteAsset(fileName)
     if not isfile(fileName) then
         delfile(fileName);
     else
-        throwerr("Asset " .. toS(fileName) .. "does not exist.");
+        throwerr("Asset " .. fileName .. "does not exist.");
         return;
     end;
 end;
@@ -27,7 +27,7 @@ function AssetDownloader:AssetFolder(folderName)
     if not isfolder(folderName) then
         makefolder(folderName);
     else
-        throwerr("Folder " .. toS(folderName) .. "Already exist.");
+        throwerr("Folder " .. folderName .. "Already exist.");
         return;
     end;
 end;
@@ -36,7 +36,7 @@ function AssetDownloader:UseAsset(asset)
     if isfile(asset) then
         getasset(asset);
     else
-        throwerr("Asset " .. toS(asset) .. " does not exist.");
+        throwerr("Asset " .. asset .. " does not exist.");
         return;
     end;
 end;
