@@ -15,7 +15,7 @@ function AssetDownloader:DownloadAsset(fileName, URL)
 end;
 
 function AssetDownloader:DeleteAsset(fileName)
-    if not isfile(fileName) then
+    if isfile(fileName) then
         delfile(fileName);
     else
         throwerr("Asset " .. fileName .. "does not exist.");
