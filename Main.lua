@@ -2,8 +2,7 @@ local AssetDownloader = {}
 
 local getasset = getsynasset or getcustomasset;
 local net = game:HttpGetAsync or game:HttpGet;
-local throwerr = function(text) error("[Asset Downloader] " .. text); end;
-local toS = tostring;
+local throwerr = function(text) print("[Asset Downloader Error] " .. text); end;
 
 function AssetDownloader:DownloadAsset(fileName, URL)
     if not isfile(fileName) then
@@ -27,10 +26,20 @@ function AssetDownloader:AssetFolder(folderName)
     if not isfolder(folderName) then
         makefolder(folderName);
     else
-        throwerr("Folder " .. folderName .. "Already exist.");
+        throwerr("Folder " .. folderName .. " already exist.");
         return;
     end;
 end;
+
+function AssetDownloader:DeleteFolder(folderName)
+    if isfolder(folderName) then
+        delfolder(folderName);
+    else
+        throwerr("Folder " .. folderName .. " does not exist.");
+        return;
+    end;
+end;
+        
 
 function AssetDownloader:UseAsset(asset)
     if isfile(asset) then
